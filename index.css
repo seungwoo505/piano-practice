@@ -1,0 +1,140 @@
+html, body{
+  height:  100%;
+  width:  100%;
+  margin:  0;
+  font-size: 1.0em;
+}
+
+html{
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select:  none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+div{
+  max-width: 100%;
+}
+
+li{
+  vertical-align: baseline;
+}
+
+ul{
+  padding-bottom: 1.125em;
+}
+
+#start{
+  height: 100%;
+  width: 100%;
+}
+
+#start > h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline;
+}
+
+#mb{
+  display: none;
+}
+
+.piano{
+  text-align: center;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.piano-wrapper{
+  width: 100%;
+  height: 100%;
+}
+
+.piano-wrapper .piano{
+  width: 90%;
+  height: 100%;
+  margin-left: 5%;
+}
+.key{
+  display: inline-flex;
+  flex-grow: 1;
+  position: relative;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.key:first-child .whitekey{
+  border-left: none;
+  border-radius: 0 0 5px 0;
+  border-left: 1px solid rgba(32, 32, 32, 0.3);
+}
+
+.key .whitekey{
+  background: #fff;
+  border-top: 1px solid rgba(32, 32, 32, 0.2);
+  border-right: 1px solid rgba(32, 32, 32, 0.3);
+  border-bottom: 1px solid rgba(32, 32, 32, 0.3);
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0px 5px 1px rgb(32, 32, 32, 0.2);
+  width: 100%;
+  height: 90%;
+  transition: background-color 0.05s ease, box-shadow 0.05s ease;
+}
+
+.key .blackkey{
+  content: "";
+  background: #111;
+  transition: background-color 0.05s ease, box-shadow 0.05s ease;
+  box-shadow: 0px 5px 1px rgb(32, 32, 32, 0.2);
+  border-radius: 0 0 5px 5px;
+  border-style: solid;
+  height: 40%;
+  position: absolute;
+  top: 0;
+  right: -40%;
+  width: 80%;
+  z-index: 10;
+}
+
+.key > span{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.key .whitekey.active{
+  background: #D8D8D8;
+  position: relative;
+  top: 5px;
+  box-shadow: 0px 0px 0px rgb(32, 32, 32, 0);
+  transition: background-color 0.05s ease, box-shadow 0.05s ease;
+}
+
+.key .blackkey.active{
+  box-shadow: 0px 1px 1px rgb(32, 32, 32, 0.1);
+  border-bottom-width: 3px;
+  height: 40%;
+  top: 5px;
+}
+
+@media( orientation:  portrait){
+  html{
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vh;
+    height: 100vw;
+  }
+}

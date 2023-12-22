@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" name="viewport" content="user-scalable=no, width=device-width">
+    <title>피아노 연습</title>
+    <link rel="stylesheet" href="index.css" />
+    <script  src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="index.js"></script>
+</head>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+<div id = "start" onclick = "start()"><h1>아무버튼을 눌러 시작하기</h1></div>
+<div class = "piano" id = "mb" onmouseup="wu(0);wu(1);wu(2);wu(3);wu(4);wu(5);wu(6);bu(0);bu(1);bu(2);bu(3);bu(4);">
+    <div class = "piano-wrapper">
+        <ul class = "piano">
+            <!--도-->
+            <li class = "key">
+                <span class = "whitekey" onmousedown="wd(0);" ontouchstart="twd(0);" ontouchend="twu(0);"></span>
+                <span class = "blackkey" onmousedown="bd(0);" ontouchstart="tbd(0);" ontouchend="tbu(0);"></span>
+            </li>
+            <!--레-->
+            <li class = "key">
+                <span class = "whitekey" onmousedown="wd(1);" ontouchstart="twd(1);" ontouchend="twu(1);"></span>
+                <span class = "blackkey" onmousedown="bd(1);" ontouchstart="tbd(1);" ontouchend="tbu(1);"></span>
+            </li>
+            <!--미-->
+            <li class = "key">
+                <span class = "whitekey" onmousedown="wd(2);" ontouchstart="twd(2);" ontouchend="twu(2);"></span>
+            </li>
+            <!--파-->
+            <li class = "key">
+                <span class = "whitekey" onmousedown="wd(3);" ontouchstart="twd(3);" ontouchend="twu(3);"></span>
+                <span class = "blackkey" onmousedown="bd(2);" ontouchstart="tbd(2);" ontouchend="tbu(2);"></span>
+            </li>
+            <!--솔-->
+            <li class = "key">
+                <span class = "whitekey" onmousedown="wd(4);" ontouchstart="twd(4);" ontouchend="twu(4);"></span>
+                <span class = "blackkey" onmousedown="bd(3);" ontouchstart="tbd(3);" ontouchend="tbu(3);"></span>
+            </li>
+            <!--라-->
+            <li class = "key">
+                <span class = "whitekey" onmousedown="wd(5);" ontouchstart="twd(5);" ontouchend="twu(5);"></span>
+                <span class = "blackkey" onmousedown="bd(4);" ontouchstart="tbd(4);" ontouchend="tbu(4);"></span>
+            </li>
+            <!--시-->
+            <li class = "key">
+                <span class = "whitekey" onmousedown="wd(6);" ontouchstart="twd(6);" ontouchend="twu(6);"></span>
+            </li>
+
+        </ul>
+    </div>
+</div>
+</body>
+</html>
