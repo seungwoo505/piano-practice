@@ -1,5 +1,11 @@
 # 피아노 연습과 네트워크를 통해 소리 전송
 
+## 개요
+
+3인 개발입니다.
+
+개인 기여도 : 90%
+
 ## UI
 ![Piano](https://github.com/seungwoo505/piano-practice/blob/main/mainScreen.png)
 
