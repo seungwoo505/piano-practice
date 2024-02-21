@@ -5,6 +5,8 @@
 
 개인 기여도 : 90%
 
+제작 기간 : 2022.05 ~ 2022.06
+
 ## UI
 ![Piano](https://github.com/seungwoo505/piano-practice/blob/main/mainScreen.png)
 
