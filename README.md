@@ -8,7 +8,7 @@
 제작 기간 : 2022.05 ~ 2022.06
 
 ## UI
-![Piano](https://github.com/seungwoo505/piano-practice/blob/main/mainScreen.png)
+<img src="https://github.com/seungwoo505/piano-practice/blob/main/mainScreen.png" height="500"/>
 
 ## 특징
 키보드, 마우스 또는 터치로 입력할 경우 아두이노에서 어떤 음인지 디스플레이를 통해 표시가 되고 소리가 납니다.
